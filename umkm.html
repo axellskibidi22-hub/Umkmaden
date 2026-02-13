@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UMKM Makanan - Rasa Nusantara</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #fffaf3;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(90deg, #ff6b35, #ff9f1c);
+      padding: 20px 50px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 24px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 60px 50px;
+      background: #fff2e1;
+      flex-wrap: wrap;
+    }
+
+    .hero-text {
+      max-width: 500px;
+    }
+
+    .hero-text h2 {
+      font-size: 40px;
+      margin-bottom: 15px;
+      color: #ff6b35;
+    }
+
+    .hero-text p {
+      font-size: 18px;
+      margin-bottom: 25px;
+      line-height: 1.5;
+    }
+
+    .btn {
+      background: #ff6b35;
+      color: white;
+      padding: 12px 22px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn:hover {
+      background: #e85a2c;
+    }
+
+    .hero img {
+      width: 320px;
+      border-radius: 20px;
+      box-shadow: 0px 8px 20px rgba(0,0,0,0.2);
+      margin-top: 20px;
+    }
+
+    section {
+      padding: 60px 50px;
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 32px;
+      color: #ff6b35;
+    }
+
+    .menu-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 20px;
+    }
+
+    .menu-card {
+      background: white;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0px 6px 15px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .menu-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .menu-card img {
+      width: 100%;
+      border-radius: 15px;
+      margin-bottom: 15px;
+    }
+
+    .menu-card h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .menu-card p {
+      font-size: 14px;
+      margin-bottom: 10px;
+      color: #666;
+    }
+
+    .menu-card span {
+      font-weight: bold;
+      color: #ff6b35;
+      font-size: 18px;
+    }
+
+    .about {
+      text-align: center;
+      max-width: 700px;
+      margin: auto;
+      font-size: 18px;
+      line-height: 1.6;
+      color: #444;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact p {
+      margin-bottom: 20px;
+      font-size: 18px;
+    }
+
+    footer {
+      background: #ff6b35;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+
+    @media(max-width: 600px){
+      header {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .hero-text h2 {
+        font-size: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>🍴 Warung Umi Indra</h1>
+    <nav>
+      <a href="#menu">Menu</a>
+      <a href="#about">Tentang</a>
+      <a href="#contact">Kontak</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-text">
+      <h2>Makanan Enak, Harga Bersahabat!</h2>
+      <p>
+        UMKM makanan rumahan dengan rasa khas Nusantara. 
+        Cocok untuk makan siang, acara keluarga.
+      </p>
+      <a class="btn" href="https://wa.me/+6288905805870" target="_blank">
+        Pesan Sekarang (WhatsApp)
+      </a>
+    </div>
+
+    <img src="poster.jpg" alt="Warung Umi Indra">
+  </div>
+
+  <!-- MENU -->
+  <section id="menu">
+    <h2>📌 Menu Favorit</h2>
+
+    <div class="menu-container">
+
+      <div class="menu-card">
+        <img src="pentol.jpg" alt="Sate Ayam">
+        <h3>Pentol Mercon</h3>
+        <p>Sate ayam bumbu kacang, aroma bakaran khas.</p>
+        <span>Rp 10.000</span>
+      </div>
+
+      <div class="menu-card">
+        <img src="bakso_kuah.jpg" alt="Nasi Goreng">
+        <h3>Bakso Kuah</h3>
+        <p>Nasi goreng dengan telur dan topping lengkap.</p>
+        <span>Rp 10.000</span>
+      </div>
+
+      <div class="menu-card">
+        <img src="bakso_goreng.jpg" alt="Bakso">
+        <h3>Bakso Goreng</h3>
+        <p>Bakso daging sapi dengan kuah gurih.</p>
+        <span>Rp 1.500</span>
+      </div>
+
+      <div class="menu-card">
+        <img src="cireng.jpg" alt="Ayam Geprek">
+        <h3>Cireng Crispy</h3>
+        <p>Ayam crispy dengan sambal pedas nikmat.</p>
+        <span>Rp 1.500</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>🏪 Tentang Kami</h2>
+    <div class="about">
+      <p>
+        <b>Warung Umi Indra</b> adalah UMKM makanan rumahan yang berdiri sejak 2024.
+        Kami menghadirkan makanan khas Indonesia dengan bahan segar, halal, dan harga terjangkau.
+        Bisa pesan untuk harian, acara, dan catering.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>📞 Kontak & Lokasi</h2>
+    <div class="contact">
+      <p><b>Alamat:</b> Kp Ciseke Batu Beulah Rt22/06 Cidahu, Sukabumi, Jawa Barat</p>
+      <p><b>Jam Buka:</b> 09.00 - 21.00</p>
+      <p><b>WhatsApp:</b> 0889-0580-5870</p>
+
+      <a class="btn" href="https://wa.me/+6288905805870" target="_blank">
+        Chat WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Warung Umi Indra | UMKM Makanan Indonesia 🇮🇩</p>
+  </footer>
+
+</body>
+</html>MKM Makanan Indonesia 🇮🇩</p>
+  </footer>
+
+</body>
+</html></html>antara | UMKM Makanan Indonesia 🇮🇩</p>
+  </footer>
+
+</body>
+</html>santara | UMKM Makanan Indonesia 🇮🇩</p>
+  </footer>
+
+</body>
+</html> 2026 Rasa Nusantara | UMKM Makanan Indonesia 🇮🇩</p>
+  </footer>
+
+</body>
+</html>sa Nusantara | UMKM Makanan Indonesia 🇮🇩</p>
+  </footer>
+
+</body>
+</html>
